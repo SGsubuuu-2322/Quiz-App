@@ -47,3 +47,23 @@ ul li {
 ul li label {
   cursor: pointer;
 }
+
+button {
+  display: block;
+  width: 100%;
+  padding: 1.3rem;
+  color: #fff;
+  background-color: cornflowerblue;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(71, 133, 248);
+}
+
+button:focus {
+  outline: none;
+  background-color: rgb(0, 89, 255);
+}
