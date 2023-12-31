@@ -23,3 +23,27 @@ body {
   width: 600px;
   overflow: hidden;
 }
+
+.quiz-header {
+  padding: 4rem;
+}
+
+h2 {
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+ul li label {
+  cursor: pointer;
+}
