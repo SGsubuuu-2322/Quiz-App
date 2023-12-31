@@ -74,5 +74,21 @@ function getAnswer() {
 
 submitBtn.addEventListener("click", () => {
   const answer = getAnswer();
-  console.log(answer);
+  if (answer) {
+    if (answer === quizData[currentQuiz].correct) {
+      score++;
+    }
+
+    currentQuiz++;
+
+    if (currentQuiz < quizData.length) {
+      loadQuiz();
+    } else {
+      quiz.innerHTML = `
+          <h2>Your answered ${score}/${quizData.length}  questions correctly...</h2>
+
+          <button onClick="location.reload()">Reload</button>
+        `;
+    }
+  }
 });
